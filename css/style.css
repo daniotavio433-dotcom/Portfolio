@@ -1,0 +1,156 @@
+/* Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1,  h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, 
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+li,h5.card-title {
+	list-style: none;
+	color: white;
+}
+
+body {
+    background-image: url(../assets/img/computer-program-coding-screen.jpg);
+    background-size: cover;      /* Cobre todo o espaço */
+    background-position: center;  /* Centraliza a imagem */
+    background-attachment: fixed; /* Fixa ao rolar a página */
+    background-repeat: no-repeat; /* Não repete */
+}
+/* Substitua as regras existentes por estas */
+
+/* Container principal como flex column */
+body > div:first-child {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+div.sobremim {
+    text-align: center;
+    padding: 30px 0 10px 0; /* Reduz o padding inferior */
+    margin-bottom: 0;
+}
+
+div.sobremim img {
+    max-width: 150px;
+    max-height: 150px;
+    display: block;
+    margin: 0 auto 15px auto;
+    border-radius: 60%; /* Opcional: deixa a imagem redonda */
+}
+
+div.sobremim h2 {
+    margin: 0 auto;
+    max-width: 600px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    line-height: 1.4; /* Melhora a legibilidade */
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px 20px 40px 20px;
+    flex-wrap: wrap; /* Permite quebra em telas menores */
+}
+
+/* Ajuste nos cards para melhor visualização */
+.card {
+    width: 280px; /* Um pouco menor para melhor proporção */
+    border-radius: 30px;
+    background: rgb(17, 12, 23);
+	border: none;
+    transition: transform 0.3s ease; /* Efeito suave ao passar o mouse */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efeito de elevação */
+}
+
+.card-body {
+    height: auto; /* Altura automática */
+    min-height: 180px;
+    width: auto;
+    text-align: center;
+    background: rgb(17, 12, 23);
+    border-radius: 30px;
+    padding: 20px 15px;
+    font-family: titulo;
+}
+
+/* Correção da cor do texto */
+.card-text {
+    color: #fff;
+}
+
+.card-text li {
+    margin: 8px 0;
+    color: #ccc;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Ajuste no botão */
+.btn-outline-light {
+    margin-top: 10px;
+}
+
+
+
+
+@font-face {
+    font-family: titulo;
+    src: url(../assets/fonts/DynaPuff-VariableFont_wdth\,wght.ttf);
+}
