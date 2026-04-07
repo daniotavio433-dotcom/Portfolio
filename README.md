@@ -1,2 +1,2 @@
 # Portfolio
-Meu portifólio
+Meu portifólio não está pronto ainda.
